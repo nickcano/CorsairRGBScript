@@ -61,22 +61,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="dynamicRainbow.lua">
-      <Filter>Lua Scripts</Filter>
-    </None>
-    <None Include="linearRainbow.lua">
-      <Filter>Lua Scripts</Filter>
-    </None>
-    <None Include="stripePulse.lua">
-      <Filter>Lua Scripts</Filter>
-    </None>
-    <None Include="stripeSolidWithSmartIndicators.lua">
-      <Filter>Lua Scripts</Filter>
-    </None>
     <None Include="library.lua">
-      <Filter>Lua Scripts</Filter>
-    </None>
-    <None Include="mobaSettings.lua">
       <Filter>Lua Scripts</Filter>
     </None>
   </ItemGroup>
