@@ -9,7 +9,9 @@ To use the application, simply drop a keyboard Lua script onto the executable (m
 **NOTE:** before using, you need to [install the libusb drivers](https://github.com/libusb/libusb/wiki/Windows#Driver_Installation).
 
 ## Building
-If you're using Visual Studio 2010, it should build just fine. I've included headers and libraries for both *libusb* and *Lua*, so you won't have to seek out the proper library versions and compile them yourself. **These are compiled by Visual Studio 2010, and you may have to recompile them if you're using something else**.
+If you're using Visual Studio 2010, it should build just fine.
+
+I've included headers and libraries for both *libusb* and *Lua*, so you won't have to seek out the proper library versions and compile them yourself. **These are compiled by Visual Studio 2010, and you may have to recompile them if you're using something else**.
 
 ## Big Thanks
 A big thanks to [Palmr](https://github.com/Palmr)! I used his [LibCorsairRGB](https://github.com/Palmr/LibCorsairRGB) as a foundation for interfacing with the keyboard. I only cleaned up the code, put it in OOP wrappers, and added a Lua engine around it.
