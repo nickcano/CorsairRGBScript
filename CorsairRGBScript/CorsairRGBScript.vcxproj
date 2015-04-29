@@ -78,6 +78,7 @@
     <ClInclude Include="corsairConstants.h" />
     <ClInclude Include="corsairRGBKeyboard.h" />
     <ClInclude Include="corsairRGBKeyboardK70.h" />
+    <ClInclude Include="corsairRGBKeyboardK95.h" />
     <ClInclude Include="keyboardScript.h" />
     <ClInclude Include="luaScript.h" />
     <ClInclude Include="usbDevice.h" />

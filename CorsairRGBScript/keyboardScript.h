@@ -58,7 +58,8 @@ private:
 	{
 		KEYBOARD_FIRST = 0,
 		KEYBOARD_K70 = KEYBOARD_FIRST,
-		KEYBOARD_LAST = KEYBOARD_K70
+		KEYBOARD_K95,
+		KEYBOARD_LAST = KEYBOARD_K95
 	};
 
 	enum keyboardIndicator : int

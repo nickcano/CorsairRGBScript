@@ -3,6 +3,7 @@
 #include "luaScript.h"
 #include "corsairRGBKeyboard.h"
 #include "corsairRGBKeyboardK70.h"
+#include "corsairRGBKeyboardK95.h"
 
 #include "utilities.h"
 
@@ -16,6 +17,7 @@ keyboardScript::keyboardScript(void)
 	this->scriptInstance = std::shared_ptr<luaScript>(new luaScript(&keyboardScript::displayLUAError, static_cast<void*>(this)));
 
 	this->scriptInstance->pushNumber("KEYBOARD_K70", KEYBOARD_K70);
+	this->scriptInstance->pushNumber("KEYBOARD_K95", KEYBOARD_K95);
 
 	this->scriptInstance->pushNumber("INDICATOR_CAPSLOCK", INDICATOR_CAPSLOCK);
 	this->scriptInstance->pushNumber("INDICATOR_NUMLOCK", INDICATOR_NUMLOCK);
@@ -127,6 +129,9 @@ int keyboardScript::lua_InitializeKeyboard(lua_State* L)
 	{
 		case KEYBOARD_K70:
 			this->keyboardInstance = std::shared_ptr<corsairRGBKeyboard>(new corsairRGBKeyboardK70());
+			break;
+		case KEYBOARD_K95:
+			this->keyboardInstance = std::shared_ptr<corsairRGBKeyboard>(new corsairRGBKeyboardK95());
 			break;
 		default:
 			break;
